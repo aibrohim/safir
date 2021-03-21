@@ -48,5 +48,8 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
-  ]
+  ],
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
+  }
 }

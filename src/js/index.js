@@ -5,3 +5,4 @@ LANG_TOGGLER.addEventListener(`click`, () => {
   LANG_LIST.classList.toggle(`lang__list--open`);
 });
 
+var slider = tns();

@@ -60,3 +60,16 @@
 .main-header__nav-link--lang-toggler {
   margin-left: 50px;
 }
+
+@media (max-width: 1440px) {
+  .main-header {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-header {
+    padding: 20px;
+  }
+}
+
