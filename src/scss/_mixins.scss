@@ -3,3 +3,7 @@
   margin: 0;
   list-style-type: none;
 }
+
+@mixin montserrat {
+  font-family: "Montserrat", "Arial", sans-serif;
+}

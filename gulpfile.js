@@ -26,7 +26,7 @@ gulp.task("css", function () {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("main.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"));
 })
@@ -59,7 +59,6 @@ gulp.task("sprite", function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
-
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("src/img"))
 })
@@ -100,7 +99,7 @@ gulp.task("copy", function () {
       "src/js/**",
       "src/*.ico"
     ], {
-      base: "source"
+      base: "src"
     })
     .pipe(gulp.dest("build"));
 })
