@@ -5,15 +5,86 @@
   width: 5.4%;
   height: 100vh;
   background-color: #fff;
+  padding: 20px 0;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 }
 
-.aside time {
+.aside::before {
+  content: '';
   display: block;
+  width: 1px;
+  height: calc(100% - 40px);
+  background-color: #1E1E1E;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.aside__time {
   writing-mode: vertical-rl;
   transform: rotateZ(-180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  position: relative;
+  z-index: 1;
+
+  margin-top: 100px;
+  padding: 28px 0;
+  font-weight: 500;
+}
+
+.aside__month {
+  margin-top: 6px;
+  font-weight: 700;
+}
+
+.aside__social-list {
+  @include reset-list;
+  margin-top: auto;
+  padding-top: 30px;
+
+  position: relative;
+  z-index: 2;
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside__social-icon {
+  fill: #1E1E1E;
+}
+
+.aside__social-item {
+  margin-bottom: 40px;
+}
+
+.aside__social-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1366px) {
+  .aside time {
+    margin-top: 50px;
+  }
+
+  .aside__social-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
 }
