@@ -1,3 +1,19 @@
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -90px;
+  right: -38px;
+  display: block;
+  width: 833px;
+  height: 758px;
+  background: url("../img/kisspng-gardening-old-age-flower-garden.png") no-repeat right center;
+  background-size: contain;
+}
+
 .hero__slides {
   @include reset-list;
 }
@@ -31,7 +47,55 @@
   margin-bottom: 83px;
 }
 
+.hero__slider-controls {
+  @include reset-list;
+  display: inline-flex;
+  position: absolute;
+  z-index: 5;
+  top: 140px;
+  left: 130px;
+}
+
+.hero__slider-control {
+  margin-right: 7px;
+  opacity: 40%;
+}
+
+.hero__slider-control:last-child {
+  margin-right: 0;
+}
+
+.tns-nav-active {
+  opacity: 1;
+}
+
+.hero__slider-control-btn {
+  background-color: #fff;
+  padding: 0;
+  border: none;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 @media (max-width: 1440px) {
+  .hero::after {
+    width: 624.75px;
+    height: 568.5px;
+    bottom: -80px;
+    right: -38px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero::after {
+    width: 592.64px;
+    height: 539.29px;
+    bottom: -40px;
+    right: -28px;
+  }
+
   .hero__slide-item {
     padding-top: 130px;
     padding-bottom: 150px;
@@ -40,5 +104,10 @@
 
   .hero__slide-text {
     margin-bottom: 50px;
+  }
+
+  .hero__slider-controls {
+    top: 100px;
+    left: 100px;
   }
 }

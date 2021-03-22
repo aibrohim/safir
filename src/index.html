@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../node_modules/tiny-slider/dist/tiny-slider.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -88,7 +87,24 @@
       </ul>
     </aside>
     <div class="hero">
+      <ol class="hero__slider-controls">
+        <li class="hero__slider-control">
+          <button class="hero__slider-control-btn"></button>
+        </li>
+        <li class="hero__slider-control">
+          <button class="hero__slider-control-btn"></button>
+        </li>
+      </ol>
       <ul class="hero__slides">
+        <li class="hero__slide-item">
+          <div class="hero__slide-content">
+            <p class="hero__slide-title">Publishing graphic design, visual</p>
+            <p class="hero__slide-text">
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document...
+            </p>
+            <a href="#" class="main-link">Подробнее</a>
+          </div>
+        </li>
         <li class="hero__slide-item">
           <div class="hero__slide-content">
             <p class="hero__slide-title">Publishing graphic design, visual</p>
@@ -100,12 +116,9 @@
         </li>
       </ul>
     </div>
-    <svg>
-      <use xlink:href="icon-telgram"></use>
-    </svg>
   </main>
 
-  <script src="../node_modules/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="js/tiny-slider.js"></script>
   <script src="./js/index.js"></script>
 </body>
 </html>
