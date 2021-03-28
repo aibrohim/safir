@@ -79,7 +79,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: $desktop) {
   .hero::after {
     width: 624.75px;
     height: 568.5px;
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .hero::after {
     width: 592.64px;
     height: 539.29px;

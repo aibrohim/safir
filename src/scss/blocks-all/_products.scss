@@ -49,14 +49,14 @@
   margin-top: 30px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: $desktop) {
   .products {
     margin-top: 80px;
     // padding: 55px 62px 75px;
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .products {
     margin-top: 40px;
   }

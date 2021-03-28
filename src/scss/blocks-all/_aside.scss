@@ -73,7 +73,7 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .aside time {
     margin-top: 50px;
   }
