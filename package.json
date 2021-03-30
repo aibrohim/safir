@@ -50,6 +50,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "dependencies": {
+    "gulp-cheerio": "^1.0.0",
     "tiny-slider": "^2.9.3"
   }
 }
