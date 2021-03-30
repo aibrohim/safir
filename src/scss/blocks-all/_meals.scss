@@ -1,0 +1,16 @@
+.meals__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.meals__item {
+  margin-right: 40px;
+}
+
+@media (max-width: 1366px) {
+  .meals__item {
+    margin-right: 30px;
+  }
+}
+
