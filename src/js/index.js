@@ -12,14 +12,17 @@ const slider = tns({
 const mealsSlider = tns({
   container: ".meals__list",
   items: 4,
+  lazyload: true,
+  nav: false,
+  controlsContainer: "#meals__btns",
   responsive: {
     "1920": {
       items: 4,
-      fixedWidth: 375
+      gutter: 40
     },
     "1366": {
       items: 4,
-      fixedWidth: 305
+      gutter: 30
     },
     "992": {
       items: 3
@@ -31,4 +34,9 @@ const mealsSlider = tns({
       items: 1
     }
   }
-})
+});
+
+(async () => {
+  const instaData = await fetch(`https://graph.facebook.com/v10.0/instagram_oembed?url=https://www.instagram.com/p/CM_9xHbJtZM/`)
+  await console.log(instaData);
+})();
