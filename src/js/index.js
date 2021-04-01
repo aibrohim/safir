@@ -45,12 +45,16 @@ const POSTS = [
   `https://www.instagram.com/p/CNCcXIZpoiG/`
 ];
 
-const ACCESS_TOKEN = `EAACx0PvGhskBAMzld03WeZCodH1w6kLHUTOspULuciuz2sTdDHYOu6ZBgIzUHl2IXbwSZCj24LO0ZCQ3ZBGlZCyqeHOMJUI5ZCg2v2tNOHrqYpy2q0spWy385B87ZBnGgE4Gl5AIUh3zWcsMc0XgIFueeQYd1pfm1VTZCbY6k8ONY6ersckksirVWlNLaODtk0c15r9UVsu5izgZDZD`;
+const CLIENT_MARKER = "bd29d7dd3df75e0616ff664ff36612e8";
+const APP_ID = "195511135405769";
+
+const ACCESS_TOKEN = APP_ID + "|" + CLIENT_MARKER;
 
 const URL = `https://graph.facebook.com/v10.0/instagram_oembed`;
 
 POSTS.forEach(async (post) => {
   const response = await fetch(`${URL}?url=${post}&maxwidth=422&access_token=${ACCESS_TOKEN}`)
+
   if (await response.status === 200) {
     const instaData = await response.json();
 
@@ -61,5 +65,3 @@ POSTS.forEach(async (post) => {
     articlesWrapper.append(article);
   }
 });
-
-

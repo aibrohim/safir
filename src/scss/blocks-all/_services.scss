@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .services__item {
@@ -22,6 +23,7 @@
 .services__item::before {
   content: '';
   flex-shrink: 0;
+  display: block;
   width: 100px;
   height: 100px;
   background: no-repeat center center;
@@ -67,5 +69,38 @@
   .services__item::before {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .services__item {
+    width: 48%;
+
+    &:last-child {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .services__item {
+    width: 100%;
+
+    &:last-child {
+      margin-left: none;
+      margin-right: none;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .services__item {
+    display: block;
+    text-align: center;
+  }
+
+  .services__item::before {
+    margin: 0 auto;
   }
 }
