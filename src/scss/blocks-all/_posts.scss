@@ -2,14 +2,38 @@
   margin-top: 155px;
 }
 
+.posts__container {
+  background-color: $light-gray;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 6.35%;
+}
+
+.posts__item {
+  width: 420px;
+}
+
 @media screen and (max-width: 1440px) {
   .posts {
     margin-top: 135px;
   }
+
+  .posts__item {
+    width: 400px;
+  }
 }
 
-@media screen and (max-width: 1366) {
+@media screen and (max-width: 1366px) {
   .posts {
     margin-top: 115px;
+  }
+
+  .posts__container {
+    padding: 100px 4.35%;
+  }
+
+  .posts__item {
+    width: 360px;
   }
 }
