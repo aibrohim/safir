@@ -1,0 +1,15 @@
+.posts {
+  margin-top: 155px;
+}
+
+@media screen and (max-width: 1440px) {
+  .posts {
+    margin-top: 135px;
+  }
+}
+
+@media screen and (max-width: 1366) {
+  .posts {
+    margin-top: 115px;
+  }
+}
