@@ -50,7 +50,7 @@
 
   border: 1px solid #000;
   padding: 17px 0 14px 27px;
-  border: 1px solid $green;
+  border: none;
   background-color: #fff;
   z-index: 3;
 }
@@ -100,5 +100,32 @@
 
   &:hover {
     color: $green;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .lang__toggler {
+    margin: 0 auto;
+  }
+
+  .lang__list {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 17px 10px;
+    border: 2px solid $green;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .lang__list-link {
+    font-size: 22px;
   }
 }

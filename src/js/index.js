@@ -65,3 +65,10 @@ POSTS.forEach(async (post) => {
     articlesWrapper.append(article);
   }
 });
+
+const header = document.querySelector(`.main-header`);
+const burger = document.querySelector(`.hamburger`);
+
+burger.addEventListener(`click`, () => {
+  header.classList.toggle(`main-header--active`);
+});
