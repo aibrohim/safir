@@ -52,6 +52,11 @@
   transform: rotate(180deg);
 }
 
+.meals__item-img {
+  width: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 1444px) {
   .meals {
     margin-top: 125px;
@@ -74,5 +79,12 @@
 
   .meals__title {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .meals__list-container {
+    width: 90%;
+    margin: 0 auto;
   }
 }
