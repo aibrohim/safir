@@ -12,6 +12,7 @@
 
 .posts__item {
   width: 420px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -35,5 +36,31 @@
 
   .posts__item {
     width: 360px;
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .posts__container {
+    justify-content: center;
+  }
+
+  .posts__item {
+    width: auto;
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 883px) {
+  .posts__item {
+    width: 420px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .posts__item {
+    width: none;
+    max-width: 420px;
+    margin-right: 0;
   }
 }
