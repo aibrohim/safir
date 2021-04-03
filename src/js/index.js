@@ -71,4 +71,5 @@ const burger = document.querySelector(`.hamburger`);
 
 burger.addEventListener(`click`, () => {
   header.classList.toggle(`main-header--active`);
+  burger.classList.toggle(`hamburger--active`);
 });

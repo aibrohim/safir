@@ -33,3 +33,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+@media screen and (max-width: $land-scape-phone) {
+  body {
+    padding: 0;
+  }
+}

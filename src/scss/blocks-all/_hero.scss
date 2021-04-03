@@ -14,6 +14,10 @@
   background-size: contain;
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__slides {
   @include reset-list;
 }
@@ -115,5 +119,48 @@
 @media screen and (max-width: $tablet) {
   .hero::after {
     display: none;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .hero__slide-item {
+    padding: 100px 30px 100px 60px;
+  }
+
+  .hero__slide-title {
+    font-size: 40px;
+  }
+
+  .hero__slider-controls {
+    top: 70px;
+    left: 85px;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .hero__slide-item {
+    padding: 100px 30px 100px 30px;
+  }
+
+  .hero__slide-content {
+    width: 100%;
+  }
+
+  .hero__slide-title {
+    font-size: 24px;
+  }
+
+  .hero__slide-text {
+    width: 87%;
+  }
+
+  .hero__slider-controls {
+    top: 70px;
+    left: 45px;
+  }
+
+  .hero__slider-control-btn {
+    width: 8px;
+    height: 8px;
   }
 }

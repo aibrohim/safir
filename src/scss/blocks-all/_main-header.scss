@@ -23,6 +23,12 @@
   height: 38.03px;
 }
 
+.main-header__content {
+  flex-grow: 1;
+  display: flex;
+
+}
+
 .main-header__nav {
   flex-grow: 1;
   display: flex;
@@ -41,10 +47,6 @@
 
 .main-header__nav-item {
   margin-right: 50px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .main-header__nav-link {
@@ -102,16 +104,17 @@
     height: calc(100vh - 114px);
     flex-direction: column;
     overflow: auto;
+
     transform: translateY(-100%);
 
-    // display: none;
-    transition: 0.3s ease transform;
+    display: none;
   }
 
   .main-header--active .main-header__content {
     display: flex;
-    // animation: open 0.3s linear;
+    animation: open 0.3s linear;
     transform: translateY(0);
+    transition: 0.3s ease transform;
   }
 
   .main-header__nav {
