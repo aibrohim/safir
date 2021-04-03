@@ -32,6 +32,9 @@ const mealsSlider = tns({
     },
     "576": {
       items: 1
+    },
+    "0": {
+      items: 1
     }
   }
 });

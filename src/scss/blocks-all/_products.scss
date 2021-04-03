@@ -61,3 +61,42 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 1357px) {
+  .products__item:nth-child(3n) {
+    margin-right: 30px;
+  }
+
+  .products__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .products__item {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 829px) {
+  .products__item {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .products__item {
+    width: 350px;
+    margin-right: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .products__description {
+    width: 100%;
+  }
+}
