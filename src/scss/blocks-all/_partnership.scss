@@ -19,6 +19,7 @@
   width: 89%;
   font-size: 40px;
   line-height: 1.2;
+  margin-top: 0;
 }
 
 .partnership__contacts {
@@ -106,5 +107,45 @@
 
   .partnership__contacts {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .partnership__container {
+    padding-left: 35%;
+  }
+
+  .partnership__contact-link {
+    font-size: 35px;
+    line-height: auto;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .partnership__container {
+    padding: 40px 17% 60px 17%;
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .partnership__container {
+    padding: 40px 8% 60px 8%;
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .partnership__container {
+    padding-bottom: 40px;
+  }
+
+  .partnership__contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .partnership__contact {
+    margin-bottom: 20px;
   }
 }

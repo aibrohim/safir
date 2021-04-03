@@ -144,6 +144,7 @@
 
   .hero__slide-content {
     width: 100%;
+    text-align: center;
   }
 
   .hero__slide-title {
@@ -156,7 +157,8 @@
 
   .hero__slider-controls {
     top: 70px;
-    left: 45px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .hero__slider-control-btn {
