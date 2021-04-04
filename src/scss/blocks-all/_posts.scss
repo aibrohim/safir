@@ -11,7 +11,9 @@
 }
 
 .posts__item {
-  width: 420px;
+  max-width: 420px;
+  width: 32%;
+  min-width: 320px;
   margin-right: 20px;
 
   &:nth-child(3n) {
@@ -23,10 +25,6 @@
   .posts {
     margin-top: 135px;
   }
-
-  .posts__item {
-    width: 400px;
-  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -37,20 +35,17 @@
   .posts__container {
     padding: 100px 4.35%;
   }
+}
 
+@media screen and (max-width: 1261px) {
   .posts__item {
-    width: 340px;
+    margin-right: 10px;
   }
 }
 
-@media screen and (max-width: 966px) {
+@media screen and (max-width: $tablet) {
   .posts__container {
     justify-content: center;
-  }
-
-  .posts__item {
-    width: auto;
-    max-width: 420px;
   }
 }
 

@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.nav__list {
+  @include reset-list;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  margin-right: 50px;
+}
+
+.nav__link {
+  color: $text;
+  transition: $transition-time ease all;
+  line-height: normal;
+  font-weight: medium;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+@media (max-width: $desktop) {
+  .nav__item {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .nav__link {
+    font-size: 22px;
+  }
+}

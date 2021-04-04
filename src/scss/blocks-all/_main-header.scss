@@ -31,33 +31,11 @@
 
 .main-header__nav {
   flex-grow: 1;
-  display: flex;
-  align-items: baseline;
   justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
 .main-header__nav-list {
-  @include reset-list;
-  display: flex;
-  align-items: baseline;
   justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.main-header__nav-item {
-  margin-right: 50px;
-}
-
-.main-header__nav-link {
-  color: $text;
-  transition: $transition-time ease all;
-  line-height: normal;
-  font-weight: medium;
-
-  &:hover {
-    color: $green;
-  }
 }
 
 .main-header__nav-link--lang-toggler {
@@ -67,10 +45,6 @@
 @media (max-width: $desktop) {
   .main-header {
     padding: 30px 0;
-  }
-
-  .main-header__nav-item {
-    margin-right: 30px;
   }
 }
 
@@ -131,10 +105,6 @@
   .main-header__nav-item {
     margin: 0;
     margin-bottom: 25px;
-  }
-
-  .main-header__nav-link {
-    font-size: 22px;
   }
 }
 
