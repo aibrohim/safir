@@ -2,12 +2,12 @@
   margin-top: 155px;
 }
 
-.posts__container {
+.posts__wrapper {
   background-color: $light-gray;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 100px 6.35%;
+  padding: 100px 6.35% 0;
 }
 
 .posts__item {
@@ -32,7 +32,7 @@
     margin-top: 115px;
   }
 
-  .posts__container {
+  .posts__wrapper {
     padding: 100px 4.35%;
   }
 }
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-  .posts__container {
+  .posts__wrapper {
     justify-content: center;
   }
 }
@@ -61,5 +61,11 @@
     width: none;
     max-width: 420px;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .posts__container {
+    padding: 0;
   }
 }

@@ -39,7 +39,7 @@ const mealsSlider = tns({
   }
 });
 
-const articlesWrapper = document.querySelector(`.posts__container`);
+const articlesWrapper = document.querySelector(`.posts__wrapper`);
 const fragment = document.createDocumentFragment();
 
 const POSTS = [
