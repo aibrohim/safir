@@ -56,7 +56,7 @@ const ACCESS_TOKEN = APP_ID + "|" + CLIENT_MARKER;
 const URL = `https://graph.facebook.com/v10.0/instagram_oembed`;
 
 POSTS.forEach(async (post) => {
-  const response = await fetch(`${URL}?url=${post}&maxwidth=422&access_token=${ACCESS_TOKEN}`)
+  const response = await fetch(`${URL}?url=${post}&maxwidth=422&access_token=${ACCESS_TOKEN}&hidecaption=true`)
 
   if (await response.status === 200) {
     const instaData = await response.json();

@@ -13,6 +13,10 @@
 .posts__item {
   width: 420px;
   margin-right: 20px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -35,7 +39,7 @@
   }
 
   .posts__item {
-    width: 360px;
+    width: 340px;
   }
 }
 
