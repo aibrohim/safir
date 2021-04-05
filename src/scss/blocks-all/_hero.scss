@@ -121,7 +121,7 @@
 
   .hero__slider-controls {
     top: 100px;
-    left: 100px;
+    left: 115px;
   }
 }
 
@@ -131,20 +131,6 @@
   }
 }
 
-@media screen and (max-width: $land-scape-phone) {
-  .hero__slide-item {
-    padding: 100px 30px 100px 60px;
-  }
-
-  .hero__slide-title {
-    font-size: 40px;
-  }
-
-  .hero__slider-controls {
-    top: 70px;
-    left: 85px;
-  }
-}
 
 @media screen and (max-width: $land-scape-phone) {
   .hero__slide-item {

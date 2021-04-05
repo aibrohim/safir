@@ -12,6 +12,8 @@
   margin: 0;
   border: none;
 
+  font-weight: 500;
+
   &:focus {
     outline: none;
   }
@@ -91,7 +93,7 @@
   color: $text;
   transition: $transition-time ease all;
   line-height: normal;
-  font-weight: medium;
+  font-weight: 500;
   display: block;
   padding: 10px;
 
@@ -125,7 +127,8 @@
     }
   }
 
-  .lang__list-link {
+  .lang__list-link,
+  .lang__toggler {
     font-size: 22px;
   }
 }

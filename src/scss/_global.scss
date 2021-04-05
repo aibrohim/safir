@@ -12,6 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  margin-top: 138.02px;
 }
 
 main {
@@ -38,8 +40,16 @@ html {
   box-sizing: inherit;
 }
 
+@media (max-width: $desktop) {
+  body {
+    margin-top: 98.02px;
+  }
+}
+
 @media screen and (max-width: $land-scape-phone) {
   body {
     padding: 0;
   }
 }
+
+

@@ -104,10 +104,14 @@
   }
 
   .main-footer__nav-item {
-    margin-right: 20px;
-    width: calc((100% - 40px) / 3);
+    margin-right: 0;
+    padding: 0 5px;
+    // width: calc((100% - 40px) / 3);
+    flex-grow: 1;
+    text-align: center;
 
-    &:nth-child(3n) {
+    &:nth-child(3n),
+    &:last-child {
       margin-right: 0;
     }
   }

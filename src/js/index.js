@@ -77,9 +77,22 @@ if (articlesWrapper) {
 }
 
 const header = document.querySelector(`.main-header`);
-const burger = document.querySelector(`.hamburger`);
+const body = document.querySelector(`body`);
 
-burger.addEventListener(`click`, () => {
-  header.classList.toggle(`main-header--active`);
-  burger.classList.toggle(`hamburger--active`);
-});
+if (header) {
+  window.addEventListener(`scroll`, () => {
+    if (window.pageYOffset >= 330) {
+      header.classList.add(`main-header--scrolled`)
+    } else {
+      header.classList.remove(`main-header--scrolled`)
+    }
+  });
+
+  const burger = document.querySelector(`.hamburger`);
+
+  burger.addEventListener(`click`, () => {
+    header.classList.toggle(`main-header--active`);
+    burger.classList.toggle(`hamburger--active`);
+    body.classList.toggle(`site-body--unscrollable`)
+  });
+}
