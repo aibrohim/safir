@@ -12,6 +12,8 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
+  <h1 class="visually-hidden">Safir don maxsulotlari kompaniyasi web-sayti</h1>
+
   <header class="main-header">
     <div class="main-header__container container">
       <a class="logo" href="/">
@@ -34,13 +36,13 @@
               <a href="about.html" class="nav__link main-header__nav-link">О нас</a>
             </li>
             <li class="nav__item main-header__nav-item">
-              <a href="products.html" class="nav__link main-header__nav-link">Продукция</a>
+              <a class="nav__link nav__link--active main-header__nav-link">Продукция</a>
             </li>
             <li class="nav__item main-header__nav-item">
               <a href="#" class="nav__link main-header__nav-link">Рецепты</a>
             </li>
             <li class="nav__item main-header__nav-item">
-              <a class="nav__link nav__link--active main-header__nav-link">Обратная связь</a>
+              <a href="contact-us.html" class="nav__link main-header__nav-link">Обратная связь</a>
             </li>
           </ul>
         </nav>
@@ -91,44 +93,62 @@
       </li>
     </ul>
   </aside>
-
   <main class="main">
-    <section class="contact-us">
-      <div class="container contact-us__container">
-        <h1 class="contact-us__title">Хотите связатся с нами</h1>
+    <section class="products products--page">
+      <div class="container">
+        <div class="products__container">
+          <h2 class="title">Наще продукция</h2>
+          <p class="products__description">In publishing and graphic design, commonly used to visual form of a document or a typeface.</p>
 
-        <p class="contact-us__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
-
-        <p class="contact-us__phone-text">
-          Телефон номер
-          <a href="tel:999771234" class="contact-us__phone">+90 123-45-67</a>
-        </p>
-
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link">
-              <svg class="social-list__icon social-list__icon--big social-list__icon--facebook">
-                <use xlink:href="#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link">
-              <svg class="social-list__icon social-list__icon--big social-list__icon--instagram">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link">
-              <svg class="social-list__icon social-list__icon--big social-list__icon--telegram">
-                <use xlink:href="#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <ul class="products__list">
+            <li class="products__item">
+              <div class="products__item-img-wrapper">
+                <img src="https://picsum.photos/184/220?random=1" alt="Product" class="products__item-img">
+              </div>
+              <h3 class="products__item-title">Бальдо Рис</h3>
+              <p class="products__item-weight">900 г</p>
+            </li>
+            <li class="products__item">
+              <div class="products__item-img-wrapper">
+                <img src="https://picsum.photos/184/220?random=2" alt="Product" class="products__item-img">
+              </div>
+              <h3 class="products__item-title">Бальдо Рис</h3>
+              <p class="products__item-weight">900 г</p>
+            </li>
+            <li class="products__item">
+              <div class="products__item-img-wrapper">
+                <img src="https://picsum.photos/184/220?random=3" alt="Product" class="products__item-img">
+              </div>
+              <h3 class="products__item-title">Бальдо Рис</h3>
+              <p class="products__item-weight">900 г</p>
+            </li>
+            <li class="products__item">
+              <div class="products__item-img-wrapper">
+                <img src="https://picsum.photos/184/220?random=4" alt="Product" class="products__item-img">
+              </div>
+              <h3 class="products__item-title">Бальдо Рис</h3>
+              <p class="products__item-weight">900 г</p>
+            </li>
+            <li class="products__item">
+              <div class="products__item-img-wrapper">
+                <img src="https://picsum.photos/184/220?random=5" alt="Product" class="products__item-img">
+              </div>
+              <h3 class="products__item-title">Бальдо Рис</h3>
+              <p class="products__item-weight">900 г</p>
+            </li>
+            <li class="products__item">
+              <div class="products__item-img-wrapper">
+                <img src="https://picsum.photos/184/220?random=6" alt="Product" class="products__item-img">
+              </div>
+              <h3 class="products__item-title">Бальдо Рис</h3>
+              <p class="products__item-weight">900 г</p>
+            </li>
+          </ul>
+        </div>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="main-footer">
@@ -188,6 +208,8 @@
     </div>
   </footer>
 
+  <script async src="//platform.instagram.com/en_US/embeds.js"></script>
+  <script src="js/tiny-slider.js"></script>
   <script src="./js/index.js"></script>
 </body>
 </html>

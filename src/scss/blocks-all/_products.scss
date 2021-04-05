@@ -1,7 +1,10 @@
 .products {
   margin-top: 90px;
-  background-color: #F0F0F0;
+}
+
+.products__container {
   padding: 3.85% 5% 5.2%;
+  background-color: #F0F0F0;
 }
 
 .products__description {
@@ -18,7 +21,7 @@
 }
 
 .products__item {
-  width: 330px;
+  width: calc((100% - 120px) / 4);
   background-color: #fff;
   text-align: center;
   padding-bottom: 38px;
@@ -27,7 +30,7 @@
   box-shadow: 0px 7px 11px rgba(19, 28, 81, 0.05);
 }
 
-.products__item:nth-child(3n) {
+.products__item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -60,33 +63,41 @@
   .products {
     margin-top: 40px;
   }
-}
 
-@media screen and (max-width: 1357px) {
-  .products__item:nth-child(3n) {
-    margin-right: 30px;
-  }
+  .products__item {
+    width: calc((100% - 60px) / 3);
 
-  .products__item:nth-child(2n) {
-    margin-right: 0;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 30px;
+    }
   }
 }
 
 @media screen and (max-width: $tablet) {
   .products__item {
-    width: 300px;
-  }
-}
+    width: calc((100% - 30px) / 3);
 
-@media screen and (max-width: 829px) {
-  .products__item {
-    width: 270px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
   }
 }
 
 @media screen and (max-width: $land-scape-phone) {
+  .products__container {
+    padding-top: 40px;
+  }
+
   .products__item {
-    width: 350px;
+    width: 100%;
     margin-right: 0;
 
     &:nth-child(3n) {
@@ -98,5 +109,42 @@
 @media screen and (max-width: $phone) {
   .products__description {
     width: 100%;
+  }
+}
+
+.products__item:last-child {
+  margin-right: 0;
+}
+
+.products--page {
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: $laptop) {
+  .products--page {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .products--page {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .products--page {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .products--page {
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 }
