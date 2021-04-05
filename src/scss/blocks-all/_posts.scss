@@ -15,6 +15,7 @@
   width: 32%;
   min-width: 320px;
   margin-right: 20px;
+  margin-bottom: 20px;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -67,5 +68,9 @@
 @media screen and (max-width: $phone) {
   .posts__container {
     padding: 0;
+  }
+
+  .posts__wrapper {
+    padding: 50px 4.35% 0;
   }
 }
