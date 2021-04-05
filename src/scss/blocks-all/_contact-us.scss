@@ -1,0 +1,95 @@
+.contact-us {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 250px;
+}
+
+.contact-us__container {
+  max-width: 700px;
+}
+
+.contact-us__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.contact-us__description {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.contact-us__phone-text {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.contact-us__phone {
+  display: block;
+  color: $text;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+@media screen and (max-width: $desktop) {
+  .contact-us {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .contact-us {
+    margin-top: 80px;
+    margin-bottom: 150px;
+  }
+
+  .contact-us__title,
+  .contact-us__phone {
+    font-size: 35px;
+    line-height: initial;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .contact-us {
+    margin-top: 70px;
+    margin-bottom: 120px;
+  }
+
+  .contact-us__title,
+  .contact-us__phone {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .contact-us {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .contact-us__title,
+  .contact-us__phone {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .contact-us {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  .contact-us__title,
+  .contact-us__phone {
+    font-size: 28px;
+  }
+
+  .contact-us__title {
+    padding: 0 20px;
+  }
+}

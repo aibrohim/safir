@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   height: 100%;
 
-  margin-top: 138.02px;
+  padding-top: 138.02px;
 }
 
 main {
@@ -42,13 +42,14 @@ html {
 
 @media (max-width: $desktop) {
   body {
-    margin-top: 98.02px;
+    padding-top: 98.02px;
   }
 }
 
 @media screen and (max-width: $land-scape-phone) {
   body {
     padding: 0;
+    padding-top: 98.02px;
   }
 }
 

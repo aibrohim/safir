@@ -22,38 +22,7 @@
 }
 
 .main-footer__social-list {
-  @include reset-list;
   margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-footer__social-item {
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.main-footer__social-icon {
-  fill: $text;
-}
-
-.main-footer__social-icon--facebook {
-  width: 17.6px;
-  height: 17.6px;
-}
-
-.main-footer__social-icon--instagram {
-  width: 18px;
-  height: 18px;
-}
-
-.main-footer__social-icon--telegram {
-  width: 16px;
-  height: 16px;
 }
 
 .main-footer__bottom {
