@@ -26,6 +26,11 @@
   }
 }
 
+.nav__link--active {
+  color: $green;
+  font-weight: 700;
+}
+
 @media (max-width: $desktop) {
   .nav__item {
     margin-right: 30px;

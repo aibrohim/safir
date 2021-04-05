@@ -74,6 +74,10 @@
   color: $text;
 }
 
+.main-footer__logo-img {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: $tablet) {
   .main-footer__nav-item {
     margin-bottom: 20px;
