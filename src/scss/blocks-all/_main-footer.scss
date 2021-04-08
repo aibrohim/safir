@@ -30,8 +30,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  position: relative;
 }
-
 .main-footer__copy,
 .main-footer__developer {
   margin: 0;
@@ -41,6 +41,10 @@
   font-weight: 600;
   font-size: 16px;
   color: $text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-footer__logo-img {

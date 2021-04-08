@@ -35,8 +35,9 @@
   color: #fff;
 }
 
-.about__intro-title span {
+.about__intro-title-green {
   color: $green;
+  font-weight: 800;
 }
 
 .about__content {
@@ -46,9 +47,14 @@
 .about__title {
   margin: 0;
   margin-bottom: 30px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: initial;
+}
+
+.about__title-green {
+  font-weight: 700;
+  color: $green;
 }
 
 @media screen and (max-width: $laptop) {

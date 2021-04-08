@@ -54,25 +54,12 @@ if (articlesWrapper) {
     `https://www.instagram.com/p/CNCcXIZpoiG/`
   ];
 
-  const CLIENT_MARKER = "bd29d7dd3df75e0616ff664ff36612e8";
-  const APP_ID = "195511135405769";
-
-  const ACCESS_TOKEN = APP_ID + "|" + CLIENT_MARKER;
-
-  const URL = `https://graph.facebook.com/v10.0/instagram_oembed`;
-
   POSTS.forEach(async (post) => {
-    const response = await fetch(`${URL}?url=${post}&maxwidth=422&access_token=${ACCESS_TOKEN}&hidecaption=true`)
+    const article = document.createElement(`iframe`);
+    article.src = post + "embed/captioned"
+    article.classList.add(`posts__item`);
 
-    if (await response.status === 200) {
-      const instaData = await response.json();
-
-      const article = document.createElement(`article`);
-      article.classList.add(`posts__item`);
-
-      article.innerHTML = instaData.html;
-      articlesWrapper.append(article);
-    }
+    articlesWrapper.append(article);
   });
 }
 
