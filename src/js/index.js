@@ -3,8 +3,10 @@ const mealsSlides = document.querySelector(`.meals__list`);
 
 if (introSlides && mealsSlides) {
   const slider = tns({
+    mode: "gallery",
     container: ".hero__slides",
     autoplay: true,
+    speed: 700,
     // autoWidth: true,
     controls: false,
     navContainer: ".hero__slider-controls",
@@ -12,6 +14,7 @@ if (introSlides && mealsSlides) {
     autoplayButtonOutput: false,
     autoHeight: false,
   });
+  slider.pause();
 
   const mealsSlider = tns({
     container: ".meals__list",

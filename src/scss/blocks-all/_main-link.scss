@@ -1,10 +1,64 @@
 .main-link {
   min-width: 147px;
-  padding: 12px 25px;
   background-color: #fff;
   color: $green;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
   border-radius: 60px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.main-link::before,
+.main-link::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  z-index: 0;
+  width: 29px;
+  height: calc(100% + 15px);
+  background-size: contain;
+}
+
+.main-link::before {
+  left: -7px;
+  background: url("../img/ellipse.svg") no-repeat left top;
+  transform: rotate(180deg);
+}
+
+.main-link::after {
+  right: -7px;
+  background: url("../img/ellipse.svg") no-repeat right top;
+}
+
+.main-link__text {
+  display: block;
+  padding: 12px 25px;
+}
+
+.main-link__text::before,
+.main-link__text::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 37px;
+  height: 1.6px;
+  display: block;
+  background-color: #fff;
+}
+
+.main-link__text::before {
+  left: 21.5px;
+}
+
+.main-link__text::after {
+  top: unset;
+  bottom: -7.5px;
+  right: 21.5px;
 }
