@@ -26,12 +26,12 @@
   padding-top: 190px;
   padding-bottom: 250px;
   padding-left: 130px;
-  background: url("../../img/slider-img.jpg") no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
 }
 
 .hero__slide-content {
-  width: 505px;
+  width: 719px;
   color: #fff;
 }
 
@@ -41,6 +41,10 @@
   line-height: normal;
   margin: 0;
   margin-bottom: 22px;
+}
+
+.hero__slide-title-green {
+  color: $green;
 }
 
 .hero__slide-text {
@@ -89,6 +93,14 @@
     height: 568.5px;
     bottom: -80px;
     right: -38px;
+  }
+
+  .hero__slide-content {
+    width: 574px;
+  }
+
+  .hero__slide-title {
+    font-size: 40px;
   }
 
   .hero__slide-item {
