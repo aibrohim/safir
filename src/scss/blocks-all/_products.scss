@@ -30,6 +30,15 @@
   box-shadow: 0px 7px 11px rgba(19, 28, 81, 0.05);
 }
 
+.products__item-link {
+  color: inherit;
+  display: block;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
 .products__item:nth-child(4n) {
   margin-right: 0;
 }
