@@ -1,0 +1,92 @@
+.product {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.product__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  margin: 0;
+  margin-bottom: 44px;
+}
+
+.product__description {
+  margin: 0;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.product__small-wrapper {
+  margin-top: 50px;
+  display: flex;
+  align-items: baseline;
+}
+
+.product__publish-time,
+.products__share {
+  @include montserrat;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+
+  margin-right: 36px;
+
+  &::before {
+    content: '';
+    background: no-repeat center center;
+    background-size: contain;
+    margin-right: 8px;
+  }
+}
+
+.product__publish-time::before {
+  width: 13.3px;
+  height: 13.3px;
+  background-image: url("../img/time.png");
+}
+
+.products__share::before {
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/share.png");
+}
+
+@media screen and (max-width: $desktop) {
+  .product {
+    padding-left: 85px;
+    margin-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: $tablet) {
+  .product {
+    padding: 0 70px;
+    margin: 60px 0;
+  }
+}
+
+@media screen and (max-width: $land-scape-phone) {
+  .product {
+    padding: 0 50px;
+    margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .product {
+    padding: 0;
+    margin: 30px 0;
+  }
+}
